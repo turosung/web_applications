@@ -28,14 +28,6 @@ describe Application do
     #         expect(response.body).to eq('Hello Leo')        
     #     end
 
-    #     it 'returns "Hello Josh"' do 
-    #         response = get('/hello?name=Josh')
-
-    #         expect(response.status).to eq(200)
-    #         expect(response.body).to eq('Hello Josh')   
-    #     end
-    # end
-
     context 'POST /sort-names' do
         it 'returns only one name when given one name' do
             response = post('/sort-names', names: 'Joe')
